@@ -1,7 +1,7 @@
 ---
 title: git-rm
 date: 2017-12-19 14:16:53
-tags:
+tags: git
 ---
 在 <code>git</code> 使用中有时会遇到这样一中情况：
 
