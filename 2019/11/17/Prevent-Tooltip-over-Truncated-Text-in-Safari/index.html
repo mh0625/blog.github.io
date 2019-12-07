@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Safari," />
 
 
 
@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/?nsukey=vGBpQGuMuo%2FPh2PqgQi%2FZCUxfyc9Sc70ry9AtmPT6r9K2rbDab85Joeu4zWKFX9WIYXwNCeRqDJTnIVVXTol2cI%2FaB%2BY2POyNun9E54npTUCg7">
+<meta name="description" content="当文本内容过多，通常我们会设置 text-overflow: ellipsis; 将超出的文本用省略号显示，使用 title 属性，将全部的文本内容设置为 title 属性的值，鼠标移动到元素上会有全部内容的文字提示。如果不想显示文字提示，不设置 title 属性，或者将 title 属性设置为空即可。 123&amp;lt;div class=&quot;text&quot; style=&quot;width: 100px;&quot;&amp;g">
+<meta name="keywords" content="Safari">
 <meta property="og:type" content="article">
-<meta property="og:title" content="禁止Safari在文本超出时，hover显示全部内容">
+<meta property="og:title" content="禁止Safari在文本截断时，hover显示全部内容">
 <meta property="og:url" content="https://blog.coderhui.com/2019/11/17/Prevent-Tooltip-over-Truncated-Text-in-Safari/index.html">
 <meta property="og:site_name" content="hui&#39;s blog">
-<meta property="og:description" content="https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/?nsukey=vGBpQGuMuo%2FPh2PqgQi%2FZCUxfyc9Sc70ry9AtmPT6r9K2rbDab85Joeu4zWKFX9WIYXwNCeRqDJTnIVVXTol2cI%2FaB%2BY2POyNun9E54npTUCg7">
-<meta property="og:updated_time" content="2019-11-07T05:54:52.619Z">
+<meta property="og:description" content="当文本内容过多，通常我们会设置 text-overflow: ellipsis; 将超出的文本用省略号显示，使用 title 属性，将全部的文本内容设置为 title 属性的值，鼠标移动到元素上会有全部内容的文字提示。如果不想显示文字提示，不设置 title 属性，或者将 title 属性设置为空即可。 123&amp;lt;div class=&quot;text&quot; style=&quot;width: 100px;&quot;&amp;g">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://blog.coderhui.com/images/safari-prevent-tooltip-img1.jpg#scale=50">
+<meta property="og:updated_time" content="2019-12-07T16:38:21.897Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="禁止Safari在文本超出时，hover显示全部内容">
-<meta name="twitter:description" content="https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/?nsukey=vGBpQGuMuo%2FPh2PqgQi%2FZCUxfyc9Sc70ry9AtmPT6r9K2rbDab85Joeu4zWKFX9WIYXwNCeRqDJTnIVVXTol2cI%2FaB%2BY2POyNun9E54npTUCg7">
+<meta name="twitter:title" content="禁止Safari在文本截断时，hover显示全部内容">
+<meta name="twitter:description" content="当文本内容过多，通常我们会设置 text-overflow: ellipsis; 将超出的文本用省略号显示，使用 title 属性，将全部的文本内容设置为 title 属性的值，鼠标移动到元素上会有全部内容的文字提示。如果不想显示文字提示，不设置 title 属性，或者将 title 属性设置为空即可。 123&amp;lt;div class=&quot;text&quot; style=&quot;width: 100px;&quot;&amp;g">
+<meta name="twitter:image" content="https://blog.coderhui.com/images/safari-prevent-tooltip-img1.jpg#scale=50">
 
 
 
@@ -104,7 +108,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -115,8 +119,8 @@
     },
     favicon: {
       visibilitychange: true,
-      normal_text: 'Hi，欢迎回来',
-      leave_text: '不送，下次再来'
+      normal_text: '(つェ⊂)咦!又好了!',
+      leave_text: '(テ_デ) 不要走～'
     }
   };
 </script>
@@ -146,7 +150,7 @@
 
 
 
-  <title>禁止Safari在文本超出时，hover显示全部内容 | hui's blog</title>
+  <title>禁止Safari在文本截断时，hover显示全部内容 | hui's blog</title>
   
 
 
@@ -158,7 +162,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -206,7 +210,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            首页
           </a>
         </li>
       
@@ -216,7 +220,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            归档
           </a>
         </li>
       
@@ -270,7 +274,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">禁止Safari在文本超出时，hover显示全部内容</h1>
+          <h1 class="post-title" itemprop="name headline">禁止Safari在文本截断时，hover显示全部内容</h1>
         
 
         <div class="post-meta">
@@ -280,9 +284,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-17T11:38:06+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-17T11:38:06+08:00">
                 2019-11-17
               </time>
             
@@ -320,8 +324,20 @@
       
 
       
-        <p><a href="https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/?nsukey=vGBpQGuMuo%2FPh2PqgQi%2FZCUxfyc9Sc70ry9AtmPT6r9K2rbDab85Joeu4zWKFX9WIYXwNCeRqDJTnIVVXTol2cI%2FaB%2BY2POyNun9E54npTUCg7Yb8%2BpmCA5RTHGnorlY1IZ8gpcn8BejEnrm1c7vFglcb4UWBMiIlNfZnbONG5TZBnJh6vPMiKwYft3moBCcYej6%2FUB92h5JDugaPBS1%2Bg%3D%3D" target="_blank" rel="noopener">https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/?nsukey=vGBpQGuMuo%2FPh2PqgQi%2FZCUxfyc9Sc70ry9AtmPT6r9K2rbDab85Joeu4zWKFX9WIYXwNCeRqDJTnIVVXTol2cI%2FaB%2BY2POyNun9E54npTUCg7Yb8%2BpmCA5RTHGnorlY1IZ8gpcn8BejEnrm1c7vFglcb4UWBMiIlNfZnbONG5TZBnJh6vPMiKwYft3moBCcYej6%2FUB92h5JDugaPBS1%2Bg%3D%3D</a></p>
-<p><a href="https://stackoverflow.com/questions/20974276/prevent-safari-from-showing-tooltip-when-text-overflow-is-hidden-with-ellipsis" target="_blank" rel="noopener">https://stackoverflow.com/questions/20974276/prevent-safari-from-showing-tooltip-when-text-overflow-is-hidden-with-ellipsis</a></p>
+        <p>当文本内容过多，通常我们会设置 <code>text-overflow: ellipsis;</code> 将超出的文本用省略号显示，使用 <code>title</code> 属性，将全部的文本内容设置为 <code>title</code> 属性的值，鼠标移动到元素上会有全部内容的文字提示。如果不想显示文字提示，不设置 <code>title</code> 属性，或者将 <code>title</code> 属性设置为空即可。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span> <span class="attr">style</span>=<span class="string">"width: 100px;"</span>&gt;</span></span><br><span class="line">    我是一段文字我是一段文字</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">    <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;</span><br><span class="line">    <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以上代码在Safari上的表现很是奇怪，我并没有设置 <code>title</code> 属性呀，怎么会出现文本提示呢(⊙ˍ⊙)<br><img src="/images/safari-prevent-tooltip-img1.jpg#scale=50" alt="如上图所示"></p>
+<p>经测试发现：</p>
+<ul>
+<li><p>如果文本未被截断，Safari表现正常，不设置 <code>title</code> 属性，就不会出现文字提示</p>
+</li>
+<li><p>当文本被截断时，即使未设置 <code>title</code> 属性，Safari上仍然会有文字提示</p>
+</li>
+</ul>
+<p>那么我们要如何阻止Safari这种奇怪的行为呢，简单两行CSS就搞定了</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考链接：<a href="https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/" target="_blank" rel="noopener">https://zzz.buzz/2017/07/31/prevent-tooltip-over-truncated-text-in-safari/</a></p>
 
       
     </div>
@@ -336,6 +352,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Safari/" rel="tag"># Safari</a>
+          
+        </div>
       
 
       
@@ -427,7 +449,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">Artikel</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -439,8 +461,8 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">Tags</span>
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
                 
               </div>
             
@@ -486,7 +508,7 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -494,7 +516,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v0.0.1</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v0.0.1</div>
 
 
 
