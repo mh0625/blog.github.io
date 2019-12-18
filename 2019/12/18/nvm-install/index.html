@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="iframe sandbox," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,21 +79,17 @@
 
 
 
-<meta name="description" content="页面 https://www.aaa.com/a.html引入一个iframehttps://www.bbb.com/b.html，b.html在代码中尝试修改父级页面的url，由于同源策略会出现以下报错 1Unsafe JavaScript attempt to initiate navigation for frame with origin &amp;apos;https://www.aaa.com">
-<meta name="keywords" content="iframe sandbox">
+<meta name="description" content="参考以下网址安装 https://kunkuntang.github.io/2018/11/12/manage-Node-js-version-via-mvn/ 安装好之后，若出现 nvm: command not found，需在 ~/.bash_profile 中添加以下代码即可 12export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot;[ -s &amp;quot;$NVM_DI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Unsafe JavaScript attempt to initiate navigation for frame...">
-<meta property="og:url" content="https://blog.coderhui.com/2019/08/22/Unsafe-JavaScript-attempt-to-initiate-navigation/index.html">
+<meta property="og:title" content="nvm-install">
+<meta property="og:url" content="https://blog.coderhui.com/2019/12/18/nvm-install/index.html">
 <meta property="og:site_name" content="hui&#39;s blog">
-<meta property="og:description" content="页面 https://www.aaa.com/a.html引入一个iframehttps://www.bbb.com/b.html，b.html在代码中尝试修改父级页面的url，由于同源策略会出现以下报错 1Unsafe JavaScript attempt to initiate navigation for frame with origin &amp;apos;https://www.aaa.com">
+<meta property="og:description" content="参考以下网址安装 https://kunkuntang.github.io/2018/11/12/manage-Node-js-version-via-mvn/ 安装好之后，若出现 nvm: command not found，需在 ~/.bash_profile 中添加以下代码即可 12export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot;[ -s &amp;quot;$NVM_DI">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://blog.coderhui.com/images/unsafe-JavaScript-attempt-img1.png">
-<meta property="og:image" content="https://blog.coderhui.com/images/unsafe-JavaScript-attempt-img2.png">
-<meta property="og:updated_time" content="2019-08-21T09:09:00.000Z">
+<meta property="og:updated_time" content="2019-12-18T07:42:18.470Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Unsafe JavaScript attempt to initiate navigation for frame...">
-<meta name="twitter:description" content="页面 https://www.aaa.com/a.html引入一个iframehttps://www.bbb.com/b.html，b.html在代码中尝试修改父级页面的url，由于同源策略会出现以下报错 1Unsafe JavaScript attempt to initiate navigation for frame with origin &amp;apos;https://www.aaa.com">
-<meta name="twitter:image" content="https://blog.coderhui.com/images/unsafe-JavaScript-attempt-img1.png">
+<meta name="twitter:title" content="nvm-install">
+<meta name="twitter:description" content="参考以下网址安装 https://kunkuntang.github.io/2018/11/12/manage-Node-js-version-via-mvn/ 安装好之后，若出现 nvm: command not found，需在 ~/.bash_profile 中添加以下代码即可 12export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot;[ -s &amp;quot;$NVM_DI">
 
 
 
@@ -145,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://blog.coderhui.com/2019/08/22/Unsafe-JavaScript-attempt-to-initiate-navigation/"/>
+  <link rel="canonical" href="https://blog.coderhui.com/2019/12/18/nvm-install/"/>
 
 
 
 
 
-  <title>Unsafe JavaScript attempt to initiate navigation for frame... | hui's blog</title>
+  <title>nvm-install | hui's blog</title>
   
 
 
@@ -258,7 +254,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.coderhui.com/2019/08/22/Unsafe-JavaScript-attempt-to-initiate-navigation/">
+    <link itemprop="mainEntityOfPage" href="https://blog.coderhui.com/2019/12/18/nvm-install/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hui.min">
@@ -275,7 +271,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Unsafe JavaScript attempt to initiate navigation for frame...</h1>
+          <h1 class="post-title" itemprop="name headline">nvm-install</h1>
         
 
         <div class="post-meta">
@@ -287,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-22T17:01:00+08:00">
-                2019-08-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-18T15:38:29+08:00">
+                2019-12-18
               </time>
             
 
@@ -325,13 +321,10 @@
       
 
       
-        <p>页面 <code><a href="https://www.aaa.com/a.html" target="_blank" rel="noopener">https://www.aaa.com/a.html</a></code>引入一个iframe<code><a href="https://www.bbb.com/b.html" target="_blank" rel="noopener">https://www.bbb.com/b.html</a></code>，<code>b.html</code>在代码中尝试修改父级页面的url，由于同源策略会出现以下报错</p>
-<p><img src="/images/unsafe-JavaScript-attempt-img1.png" alt="出现以上报错信息"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Unsafe JavaScript attempt to initiate navigation for frame with origin &apos;https://www.aaa.com/a.html&apos; from frame with URL &apos;https://www.bbb.com/b.html&apos;. The frame attempting navigation is targeting its top-level window, but is neither same-origin with its target nor has it received a user gesture. See https://www.chromestatus.com/features/5851021045661696.</span><br></pre></td></tr></table></figure></p>
-<p>大概意思是：浏览器监测到了iframe中存在不安全的链接正在尝试进行导航。<br>iframe默认情况下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在html5页面中，可以使用iframe的sandbox属性，&lt;iframe src=&quot;https://www.bbb.com/b.html&quot;&gt;&lt;/iframe&gt;如果未添加sandbox属性，或者添加了sandbox但是后面不加任何值，就代表采用默认的安全策略，即：iframe的页面将会被当做一个独自的源，同时不能提交表单，以及执行javascript脚本，也不能让包含iframe的父页面导航到其他地方，所有的插件，如flash,applet等也全部不能起作用。简单说iframe就只剩下一个展示的功能，正如他的名字一样，所有的内容都被放入了一个单独的沙盒。</span><br></pre></td></tr></table></figure></p>
-<p>sandbox包含的属性及作用：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">allow-forms 允许进行提交表单</span><br><span class="line">allow-scripts 运行执行脚本</span><br><span class="line">allow-same-origin 允许同域请求,比如ajax,storage</span><br><span class="line">allow-top-navigation 允许iframe能够主导window.top进行页面跳转</span><br><span class="line">allow-popups 允许iframe中弹出新窗口,比如,window.open,target=”_blank”</span><br><span class="line">allow-pointer-lock 在iframe中可以锁定鼠标，主要和鼠标锁定有关</span><br></pre></td></tr></table></figure></p>
-<p>在iframe加上这个代码之后 sandbox=”allow-scripts allow-top-navigation allow-same-origin” ，刷新页面再测，就可以正常跳转了</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">turntable.js?v=48149109fd63d82fe8c816eafa1d7a6a:44 Uncaught DOMException: Failed to set the &apos;href&apos; property on &apos;Location&apos;: The current window does not have permission to navigate the target frame to &apos;https://luckydraw.wenjuan.com/draw/info/5d5cdb262ee1305873576887/?mid=5d5cdc02f27e69739bbb70b5&amp;short_id=&amp;title=&amp;begin_desc=##/5d5cda1f3631f2edd45f4f90/7Fj67v/%E6%B5%8B%E8%AF%84-%E6%B5%8B%E8%AF%84%E5%88%86%E5%80%BC+%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8A%BD%E5%A5%96/assess&apos;.</span><br><span class="line">    at HTMLCanvasElement.callback (https://luckydraw.wenjuan.com/static/js/draw/turntable.js?v=48149109fd63d82fe8c816eafa1d7a6a:44:50)</span><br><span class="line">    at Wilq32.PhotoEffect._setupParameters._animate (https://luckydraw.wenjuan.com/static/js/draw/awardRotate.js?v=9ddbfcbcea64ded76311975f2c2eea07:238:43)</span><br><span class="line">    at https://luckydraw.wenjuan.com/static/js/draw/awardRotate.js?v=9ddbfcbcea64ded76311975f2c2eea07:230:35</span><br></pre></td></tr></table></figure>
-<p><img src="/images/unsafe-JavaScript-attempt-img2.png" alt="出现以上报错信息"></p>
+        <p>参考以下网址安装</p>
+<p><a href="https://kunkuntang.github.io/2018/11/12/manage-Node-js-version-via-mvn/" target="_blank" rel="noopener">https://kunkuntang.github.io/2018/11/12/manage-Node-js-version-via-mvn/</a></p>
+<p>安装好之后，若出现 <code>nvm: command not found</code>，需在 <code>~/.bash_profile</code> 中添加以下代码即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$HOME/.nvm&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -347,12 +340,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/iframe-sandbox/" rel="tag"># iframe sandbox</a>
-          
-        </div>
-      
 
       
       
@@ -362,8 +349,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/11/make提示：g++命令未找到/" rel="next" title="make提示：g++命令未找到">
-                <i class="fa fa-chevron-left"></i> make提示：g++命令未找到
+              <a href="/2019/12/18/vue-cli-cypress-was-slow/" rel="next" title="vue-cli-cypress-was-slow">
+                <i class="fa fa-chevron-left"></i> vue-cli-cypress-was-slow
               </a>
             
           </div>
@@ -371,10 +358,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/17/Prevent-Tooltip-over-Truncated-Text-in-Safari/" rel="prev" title="禁止Safari在文本截断时，hover显示全部内容">
-                禁止Safari在文本截断时，hover显示全部内容 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
